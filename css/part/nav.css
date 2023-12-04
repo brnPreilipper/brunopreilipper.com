@@ -1,0 +1,9 @@
+.navbar{
+    background-color: #820AD1;
+}
+.navbar .nav-link{
+    color: #f9f9f9;
+}
+.navbar .nav-link.active{
+    color: #cf96f6;
+}
