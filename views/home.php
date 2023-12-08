@@ -48,48 +48,48 @@ $dados = [
 <?php
 $stacks = [
     [
-        "title" => "PHP",
-        "description" => "18 anos de experiência",
-        "img" => "php.png",
+        "title" => "Assistência Técnica",
+        "description" => "Manutenção eficaz em assistência técnica",
+        "img" => "home1.png",
         "btnAction" => "https://google.com",
         "btnLabel" => "Visitar site"
     ],
     [
-        "title" => "MYSQL",
-        "description" => "18 anos de experiência",
-        "img" => "mysql.png",
+        "title" => "Design e Tecnologia",
+        "description" => "Inovação sólida em design e tecnologia",
+        "img" => "home2.png",
         "btnAction" => "https://google.com",
         "btnLabel" => "Visitar site"
     ],
     [
-        "title" => "JAVASCRIPT",
-        "description" => "18 anos de experiência",
-        "img" => "javascript.png",
+        "title" => "Reformas e Reparo",
+        "description" => "Excelência segura em reformas residenciais",
+        "img" => "home3.png",
         "btnAction" => "https://google.com",
         "btnLabel" => "Visitar site"
     ],
     [
-        "title" => "NODE JS",
-        "description" => "18 anos de experiência",
-        "img" => "node.jpg",
+        "title" => "Serviços domésticos",
+        "description" => "Eficiência confiável em serviços domésticos",
+        "img" => "home4.png",
         "btnAction" => "https://google.com",
         "btnLabel" => "Visitar site"
     ]
 ];
 ?>
-<div class="container">
+<div class="container p-5">
     <div class="row">
         <?php
         foreach($stacks as $stack){
             $url_site = URL_SITE;
             echo <<<HTML
-            <div class="col col-sm-12 col-md-3">
-                <div class="card">
+            <div class="col col-sm-12 col-md-3 text-center">
+                <div class="card h-100 ">
                     <img src="{$url_site}img/{$stack['img']}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{$stack['title']}</h5>
                         <p class="card-text">{$stack['description']}</p>
-                        <a href="{$stack['btnAction']}" class="btn btn-primary">{$stack['btnLabel']}</a>
+                        <a href="{$stack['btnAction']}" class="btn btn-secondary ">{$stack['btnLabel']}</a>
                     </div>
                 </div>
             </div>

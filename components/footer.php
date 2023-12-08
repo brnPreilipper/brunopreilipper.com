@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <p>&copy; 2023 FacilitaAí | Todos os direitos reservados</p>
+                <p class="copy">&copy; 2023 FacilitaAí | Todos os direitos reservados</p>
             </div>
         </div>
     </div>
