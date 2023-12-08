@@ -1,20 +1,16 @@
 <!-- banner da pagina inicial -->
 <?php
+$sql = "SELECT * FROM banners";
+$qry = mysqli_query($con, $sql) or die("ERRO AO CONSULTAR");
 
-$dados = [
-    [
-        "title" => "Curso de Programação PHP",
-        "description" => "o melhor curso do Brasil",
-        "img" => "banner1.png",
-        "mobile" => "m1m.png"
-    ],
-    [
-        "title" => "Curso lógica de programação",
-        "description" => "Vamos descobrir os conceitos basicos que norteiam as linguagens",
-        "img" => "banner2.png",
-        "mobile" => "m2m.png"
-    ],
-]
+$dados = [];
+$i = 0;
+while($data = mysqli_fetch_assoc($qry)){
+    $dados[$i] = $data;
+    $i++;
+}
+
+
 ?>
 <div id="carouselExampleCaptions" class="carousel slide">
 
